@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                     v.setText("");
                 }
                 target = RandomIcon(icons);
-                if(icons.size()==1)
+                if(icons.size()==0)
                 {
                     Toast.makeText(getApplicationContext(),
                             "Win! " ,Toast.LENGTH_SHORT).show();
