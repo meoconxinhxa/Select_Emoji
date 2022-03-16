@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -45,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
                     v.setText("");
                 }
                 target = RandomIcon(icons);
+                if(icons.size()==1)
+                {
+                    Toast.makeText(getApplicationContext(),
+                            "Win! " ,Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
