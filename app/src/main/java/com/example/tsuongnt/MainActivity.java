@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         gridView=findViewById(R.id.myGirdView);
         List<Integer> emoji = Arrays.asList(
-                8986, 0x1F603, 0x1F605, 0x1F60D, 0x1F60F,
-                0x1F618, 0x1F621, 0x1F625, 0x1F628, 0x1F62D,
-                0x1F637, 0x1F61D, 0x1F616, 0x1F609, 0x1F60B,
-                0x1F635, 0x1F633, 0x1F624, 0x1F61C, 0x1F60A);
+                128011, 128007,	128008, 128001, 128012,
+                128014, 128015, 128018, 128019, 128025,
+                128022, 128028, 128030, 128035, 128039,
+                128045, 128046, 128056, 128060, 128043);
         List data = new ArrayList();
         for (int i = 0; i < emoji.size(); i++) {
             data.add(new String(Character.toChars(emoji.get(i))));
@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
                     v.setText("");
                 }
                 target = RandomIcon(icons);
-                if(icons.size()==0)
+                if(icons.size()==1)
                 {
                     Toast.makeText(getApplicationContext(),
-                            "Win! " ,Toast.LENGTH_SHORT).show();
+                            "Bạn thắng rồi" ,Toast.LENGTH_SHORT).show();
                 }
             }
         });
